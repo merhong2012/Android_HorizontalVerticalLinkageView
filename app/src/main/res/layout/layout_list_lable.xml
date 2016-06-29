@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/compositeSessionDialogWidth"
+                android:layout_height="wrap_content"
+                android:background="@color/color_gray_c4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70px">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:padding="10px"
+                android:src="@drawable/schedule_popupclose"/>
+
+        </FrameLayout>
+
+
+        <ListView
+            android:id="@+id/list_items"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"
+            android:cacheColorHint="@color/transparent"
+            android:drawSelectorOnTop="true"
+            android:listSelector="?attr/selectableItemBackground"/>
+    </LinearLayout>
+</RelativeLayout>

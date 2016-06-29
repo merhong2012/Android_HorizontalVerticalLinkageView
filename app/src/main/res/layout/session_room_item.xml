@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout_session"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="left"
+              android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/session_room_height"
+        android:gravity="left">
+
+        <View
+            android:layout_width="@dimen/line_height"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="@color/color_frame"/>
+
+        <TextView
+            android:id="@+id/txt_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/color_gray_999"
+            android:textSize="24px"
+            />
+    </FrameLayout>
+</LinearLayout>
